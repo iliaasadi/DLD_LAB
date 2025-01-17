@@ -1,0 +1,5 @@
+verilog work "decoder2x4nd.v"
+verilog work "decoder4X16.v"
+verilog work "final555.v"
+verilog work "tstfinal5555555555.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

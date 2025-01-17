@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/ilck/veilog7/verilog7/veritrst7_isim_beh.exe" -prj "D:/ilck/veilog7/verilog7/veritrst7_beh.prj" "work.veritrst7" "work.glbl" 

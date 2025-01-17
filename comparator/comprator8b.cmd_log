@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/ilck/comparator/comprator8b.xst" -ofn "D:/ilck/comparator/comprator8b.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comprator8b.xst" -ofn "D:/ilck/comparator/comprator8b.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim comprator8b.ngc comprator8b_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc comparatoeB.ucf -p xc3s400-pq208-5 comprator8b.ngc comprator8b.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o comprator8b_map.ncd comprator8b.ngd comprator8b.pcf 
+par -w -intstyle ise -ol high -t 1 comprator8b_map.ncd comprator8b.ncd comprator8b.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml comprator8b.twx comprator8b.ncd -o comprator8b.twr comprator8b.pcf -ucf comparatoeB.ucf 
+xst -intstyle ise -ifn "D:/ilck/comparator/comprator8b.xst" -ofn "D:/ilck/comparator/comprator8b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc comparatoeB.ucf -p xc3s400-pq208-5 comprator8b.ngc comprator8b.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o comprator8b_map.ncd comprator8b.ngd comprator8b.pcf 
+par -w -intstyle ise -ol high -t 1 comprator8b_map.ncd comprator8b.ncd comprator8b.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml comprator8b.twx comprator8b.ncd -o comprator8b.twr comprator8b.pcf -ucf comparatoeB.ucf 

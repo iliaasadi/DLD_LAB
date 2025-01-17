@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+xst -intstyle ise -ifn "D:/ilck/comparator/comparatoeB.xst" -ofn "D:/ilck/comparator/comparatoeB.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 comparatoeB.ngc comparatoeB.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o comparatoeB_map.ncd comparatoeB.ngd comparatoeB.pcf 
+par -w -intstyle ise -ol high -t 1 comparatoeB_map.ncd comparatoeB.ncd comparatoeB.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml comparatoeB.twx comparatoeB.ncd -o comparatoeB.twr comparatoeB.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim comparatoeB.ngc comparatoeB_synthesis.v 
+bitgen -intstyle ise -f comparatoeB.ut comparatoeB.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc comparatoeB.ucf -p xc3s400-pq208-5 comparatoeB.ngc comparatoeB.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o comparatoeB_map.ncd comparatoeB.ngd comparatoeB.pcf 
+par -w -intstyle ise -ol high -t 1 comparatoeB_map.ncd comparatoeB.ncd comparatoeB.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml comparatoeB.twx comparatoeB.ncd -o comparatoeB.twr comparatoeB.pcf -ucf comparatoeB.ucf 
+bitgen -intstyle ise -f comparatoeB.ut comparatoeB.ncd 

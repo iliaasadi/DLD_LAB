@@ -1,0 +1,14 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/ilck/decoder2x4/tstfinal5555555555_isim_beh.exe -prj D:/ilck/decoder2x4/tstfinal5555555555_beh.prj work.tstfinal5555555555 work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ilck/decoder2x4/decoder2x4nd.v" into library work
+Analyzing Verilog file "D:/ilck/decoder2x4/decoder4X16.v" into library work
+Analyzing Verilog file "D:/ilck/decoder2x4/final555.v" into library work
+Analyzing Verilog file "D:/ilck/decoder2x4/tstfinal5555555555.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:604 - "D:/ilck/decoder2x4/final555.v" Line 32: Module instantiation should have an instance name
+Completed static elaboration
+ERROR:Simulator:793 - Unable to elaborate instantiated module decoder4X16

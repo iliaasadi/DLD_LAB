@@ -1,0 +1,30 @@
+
+
+NET "car_in" LOC = P187;
+NET "car_out" LOC = P185;
+NET "Ex[1]" LOC = P171;
+NET "Ex[0]" LOC = P169;
+NET "clk_in" LOC = P184;
+NET "RST" LOC = P183;
+NET "light_door_open" LOC = P50;
+NET "light_full_garage" LOC = P51;
+
+# PlanAhead Generated physical constraints 
+
+NET "parking_lights[3]" LOC = P61;
+NET "parking_lights[2]" LOC = P62;
+NET "parking_lights[1]" LOC = P63;
+NET "parking_lights[0]" LOC = P64;
+NET "seg_select[4]" LOC = P16;
+NET "seg_select[3]" LOC = P19;
+NET "seg_select[2]" LOC = P18;
+NET "seg_select[1]" LOC = P20;
+NET "seg_select[0]" LOC = P15;
+NET "seg_data[7]" LOC = P3;
+NET "seg_data[6]" LOC = P9;
+NET "seg_data[5]" LOC = P12;
+NET "seg_data[4]" LOC = P4;
+NET "seg_data[3]" LOC = P5;
+NET "seg_data[2]" LOC = P11;
+NET "seg_data[1]" LOC = P7;
+NET "seg_data[0]" LOC = P10;

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Jan 12 12:28:13 2025
+# Process ID: 9855
+# Log file: /home/ise/share/ilick1111111/DLD/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/share/ilick1111111/DLD/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/share/ilick1111111/DLD/pa.fromNetlist.tcl

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="309" delta="new" ><arg fmt="%s" index="1">&quot;final555.v&quot; line 32 </arg>Module instance must have an instance name.
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;final555.v&quot; line 32 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">decoder4X16</arg>&apos;
+</msg>
+
+</messages>
+

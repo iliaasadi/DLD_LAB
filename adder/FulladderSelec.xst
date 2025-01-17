@@ -1,0 +1,5 @@
+set -tmpdir "D:/ummm/adder/xst/projnav.tmp"
+set -xsthdpdir "D:/ummm/adder/xst"
+elaborate
+-ifn FulladderSelec.prj
+-ifmt mixed

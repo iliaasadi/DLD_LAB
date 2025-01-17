@@ -1,0 +1,7 @@
+MO changeState NULL changeState.v vlg5B/change_state.bin 1736686252
+MO CLK_main NULL CLK_main.v vlg16/_c_l_k__main.bin 1736686252
+MO main NULL main.v vlg2D/main.bin 1736686252
+MO D_B NULL D_B.v vlg41/_d___b.bin 1736686252
+MO frequencyBlink NULL frequencyBlink.v vlg06/frequency_blink.bin 1736686252
+MO sevenSeg NULL sevenSeg.v vlg78/seven_seg.bin 1736686252
+MO segDevider NULL segDevider.v vlg16/seg_devider.bin 1736686252

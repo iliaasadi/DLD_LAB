@@ -1,0 +1,18 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "SEG_DATA[0]" LOC = P10;
+NET "SEG_DATA[1]" LOC = P7;
+NET "SEG_DATA[2]" LOC = P11;
+NET "SEG_DATA[3]" LOC = P5;
+NET "SEG_DATA[4]" LOC = P4;
+NET "SEG_DATA[5]" LOC = P12;
+NET "SEG_DATA[6]" LOC = P9;
+NET "SEG_DATA[7]" LOC = P3;
+NET "SEG_SEL[0]" LOC = P15;
+NET "SEG_SEL[1]" LOC = P20;
+NET "SEG_SEL[2]" LOC = P19;
+NET "SEG_SEL[3]" LOC = P18;
+NET "SEG_SEL[4]" LOC = P16;
+NET "clkin" LOC = P184;
+NET "ud" LOC = P161;

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ilck\veilog7\verilog7\verilog77.ncd
+OUTFILE=D:\ilck\veilog7\verilog7\verilog77.bit
+FAMILY=Spartan3
+PART=xc3s400-5pq208
+WORKINGDIR=D:\ilck\veilog7\verilog7
+LICENSE=WebPack
+USER_INFO=__0_0_0

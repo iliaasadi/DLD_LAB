@@ -1,0 +1,7 @@
+vhdtdtfi -lib work D:/ilck/decoder2x4/f5.v -lang verilog -prj decoder2x4 -o f5.spl -module f5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 f5.spl D:/ilck/decoder2x4/f5.sym 
+vhdtdtfi -lang verilog -prj decoder2x4 -o D:/ilck/decoder2x4/f5.tfi -lib work D:/ilck/decoder2x4//f5.v -module f5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work D:/ilck/decoder2x4/f5.v -lang verilog -prj decoder2x4 -o f5.spl -module f5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 f5.spl D:/ilck/decoder2x4/f5.sym 
+vhdtdtfi -lib work D:/ilck/decoder2x4/f5.v -lang verilog -prj decoder2x4 -o f5.spl -module f5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 f5.spl D:/ilck/decoder2x4/f5.sym 

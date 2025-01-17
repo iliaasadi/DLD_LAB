@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/ilck/comparator/testtt8b_isim_beh.exe" -prj "D:/ilck/comparator/testtt8b_beh.prj" "work.testtt8b" "work.glbl" 

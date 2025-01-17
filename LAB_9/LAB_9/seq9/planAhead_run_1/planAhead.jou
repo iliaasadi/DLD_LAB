@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 26 12:21:10 2024
+# Process ID: 2780
+# Log file: D:/ilck/seq91/seq91/seq9/planAhead_run_1/planAhead.log
+# Journal file: D:/ilck/seq91/seq91/seq9/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ilck/seq91/seq91/seq9/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P10 [get_ports {SEG_DATA[0]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {SEG_DATA[1]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {SEG_DATA[2]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports {SEG_DATA[3]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {SEG_DATA[4]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {SEG_DATA[5]}]
+endgroup
+startgroup
+set_property package_pin P9 [get_ports {SEG_DATA[6]}]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports {SEG_DATA[7]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {SEG_SEL[0]}]
+endgroup
+startgroup
+set_property package_pin P20 [get_ports {SEG_SEL[1]}]
+endgroup
+startgroup
+set_property package_pin P19 [get_ports {SEG_SEL[2]}]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports {SEG_SEL[3]}]
+endgroup
+startgroup
+set_property package_pin P16 [get_ports {SEG_SEL[4]}]
+endgroup
+startgroup
+set_property package_pin P161 [get_ports clkin]
+endgroup
+set_property package_pin "" [get_ports [list  ud]]
+startgroup
+set_property package_pin P184 [get_ports clkin]
+endgroup
+startgroup
+set_property package_pin P161 [get_ports ud]
+endgroup
+startgroup
+set_property package_pin P184 [get_ports clkin]
+endgroup
+startgroup
+set_property package_pin P161 [get_ports ud]
+endgroup
+set_property is_loc_fixed false [get_ports [list  ud]]
+set_property is_loc_fixed true [get_ports [list  ud]]
+save_constraints

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/share/ilick1111111/DLD/main.ncd
+OUTFILE=/home/ise/share/ilick1111111/DLD/main.bit
+FAMILY=Spartan3
+PART=xc3s400-5pq208
+WORKINGDIR=/home/ise/share/ilick1111111/DLD
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

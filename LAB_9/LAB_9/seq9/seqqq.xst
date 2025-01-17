@@ -1,0 +1,5 @@
+set -tmpdir "D:/ilck/seq91/seq91/seq9/xst/projnav.tmp"
+set -xsthdpdir "D:/ilck/seq91/seq91/seq9/xst"
+elaborate
+-ifn seqqq.prj
+-ifmt mixed

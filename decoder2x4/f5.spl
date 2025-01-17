@@ -1,0 +1,12 @@
+[Inputs]
+c
+d
+c1
+d1
+en
+[Outputs]
+f
+[BiDir]
+[ATTRIBUTES]
+VeriModel f5
+

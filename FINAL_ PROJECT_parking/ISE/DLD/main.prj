@@ -1,0 +1,7 @@
+verilog work "sevenSeg.v"
+verilog work "frequencyBlink.v"
+verilog work "segDevider.v"
+verilog work "D_B.v"
+verilog work "CLK_main.v"
+verilog work "changeState.v"
+verilog work "main.v"

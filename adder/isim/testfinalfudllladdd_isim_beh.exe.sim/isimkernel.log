@@ -1,0 +1,28 @@
+Command line:
+   testfinalfudllladdd_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56673
+
+Tue Nov 05 16:35:27 2024
+
+
+ Elaboration Time: 0.514803 sec
+
+ Current Memory Usage: 680.538 Meg
+
+ Total Signals          : 64
+ Total Nets             : 47
+ Total Signal Drivers   : 33
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 35
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 137
+
+ Total Simulation Time: 0.514803 sec
+
+ Current Memory Usage: 680.538 Meg
+
+Tue Nov 05 16:50:58 2024
+

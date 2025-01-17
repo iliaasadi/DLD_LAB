@@ -1,0 +1,38 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/ummm/adder/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to D:/ummm/adder/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "FulladderSelec.v" in library work
+ERROR:HDLCompilers:26 - "FulladderSelec.v" line 33 expecting ';', found 'endmodule'
+Compiling verilog file "finalFullAdder1.v" in library work
+ERROR:HDLCompilers:27 - "finalFullAdder1.v" line 22 Illegal redeclaration of 'a'
+ERROR:HDLCompilers:27 - "finalFullAdder1.v" line 23 Illegal redeclaration of 'b'
+ERROR:HDLCompilers:27 - "finalFullAdder1.v" line 24 Illegal redeclaration of 'selector'
+ERROR:HDLCompilers:27 - "finalFullAdder1.v" line 25 Illegal redeclaration of 'cin'
+ERROR:HDLCompilers:27 - "finalFullAdder1.v" line 26 Illegal redeclaration of 'cout'
+Module <FulladderSelec> compiled
+ERROR:HDLCompilers:26 - "finalFullAdder1.v" line 34 expecting 'EOF', found ';'
+Analysis of file <"finalFullAdder1.prj"> failed.
+--> 
+
+Total memory usage is 213448 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

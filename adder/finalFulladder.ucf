@@ -1,0 +1,20 @@
+
+
+NET "a[3]" LOC = P183;
+NET "a[2]" LOC = P182;
+NET "a[1]" LOC = P181;
+NET "a[0]" LOC = P180;
+NET "b[3]" LOC = P178;
+NET "b[2]" LOC = P176;
+NET "b[1]" LOC = P175;
+NET "b[0]" LOC = P172;
+NET "s[3]" LOC = P42;
+NET "s[2]" LOC = P43;
+NET "s[1]" LOC = P44;
+NET "s[0]" LOC = P45;
+
+# PlanAhead Generated physical constraints 
+
+NET "cin" LOC = P161;
+NET "sel" LOC = P162;
+NET "cout" LOC = P51;

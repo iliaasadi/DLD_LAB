@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 26 12:50:50 2024
+# Process ID: 4592
+# Log file: D:/ilck/seq91/seq91/seq9/planAhead_run_2/planAhead.log
+# Journal file: D:/ilck/seq91/seq91/seq9/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ilck/seq91/seq91/seq9/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P161 [get_ports ud]
+endgroup
+set_property is_loc_fixed false [get_ports [list  ud]]
+set_property is_loc_fixed true [get_ports [list  ud]]
+set_property is_loc_fixed false [get_ports [list  ud]]
+set_property is_loc_fixed true [get_ports [list  ud]]

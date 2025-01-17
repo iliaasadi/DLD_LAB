@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/ilck/seq91/seq91/seq9/tewsststst_isim_beh.exe" -prj "D:/ilck/seq91/seq91/seq9/tewsststst_beh.prj" "work.tewsststst" "work.glbl" 

@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml decoder4X16.twx decoder4X16.ncd -o decoder4X16.twr
+decoder4X16.pcf
+
+Design file:              decoder4X16.ncd
+Physical constraint file: decoder4X16.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+c              |D0             |    7.844|
+c              |D1             |    8.829|
+c              |D2             |    8.593|
+c              |D3             |    7.838|
+c              |D4             |    8.380|
+c              |D5             |    8.548|
+c              |D6             |    7.789|
+c              |D7             |    7.807|
+c              |D8             |    7.378|
+c              |D9             |    7.582|
+c              |D10            |    7.737|
+c              |D11            |    7.744|
+c              |D12            |    7.942|
+c              |D13            |    7.668|
+c              |D14            |    8.405|
+c              |D15            |    8.217|
+c1             |D0             |    7.319|
+c1             |D1             |    9.329|
+c1             |D2             |    8.794|
+c1             |D3             |    7.992|
+c1             |D4             |    7.868|
+c1             |D5             |    9.127|
+c1             |D6             |    8.094|
+c1             |D7             |    7.925|
+c1             |D8             |    7.474|
+c1             |D9             |    7.391|
+c1             |D10            |    7.983|
+c1             |D11            |    8.117|
+c1             |D12            |    8.025|
+c1             |D13            |    7.540|
+c1             |D14            |    8.469|
+c1             |D15            |    8.478|
+d              |D0             |    7.894|
+d              |D1             |    8.899|
+d              |D2             |    8.738|
+d              |D3             |    7.983|
+d              |D4             |    8.430|
+d              |D5             |    8.618|
+d              |D6             |    7.934|
+d              |D7             |    7.952|
+d              |D8             |    7.428|
+d              |D9             |    7.652|
+d              |D10            |    7.882|
+d              |D11            |    7.889|
+d              |D12            |    7.992|
+d              |D13            |    7.738|
+d              |D14            |    8.550|
+d              |D15            |    8.362|
+d1             |D0             |    7.392|
+d1             |D1             |    8.944|
+d1             |D2             |    8.456|
+d1             |D3             |    7.855|
+d1             |D4             |    8.002|
+d1             |D5             |    8.737|
+d1             |D6             |    7.688|
+d1             |D7             |    7.892|
+d1             |D8             |    7.046|
+d1             |D9             |    7.037|
+d1             |D10            |    7.938|
+d1             |D11            |    7.781|
+d1             |D12            |    7.671|
+d1             |D13            |    7.489|
+d1             |D14            |    8.115|
+d1             |D15            |    8.124|
+en             |D0             |    7.513|
+en             |D1             |    8.955|
+en             |D2             |    8.713|
+en             |D3             |    7.967|
+en             |D4             |    8.128|
+en             |D5             |    8.687|
+en             |D6             |    7.840|
+en             |D7             |    7.831|
+en             |D8             |    7.495|
+en             |D9             |    7.022|
+en             |D10            |    7.430|
+en             |D11            |    7.360|
+en             |D12            |    8.125|
+en             |D13            |    7.472|
+en             |D14            |    7.721|
+en             |D15            |    8.199|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Oct 29 15:45:25 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 158 MB
+
+
+

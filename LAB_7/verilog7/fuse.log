@@ -1,0 +1,12 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/ilck/veilog7/verilog7/veritrst7_isim_beh.exe -prj D:/ilck/veilog7/verilog7/veritrst7_beh.prj work.veritrst7 work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ilck/veilog7/verilog7/verilog77.v" into library work
+ERROR:HDLCompiler:44 - "D:/ilck/veilog7/verilog7/verilog77.v" Line 10: s is not a constant
+ERROR:HDLCompiler:44 - "D:/ilck/veilog7/verilog7/verilog77.v" Line 14: s is not a constant
+ERROR:HDLCompiler:44 - "D:/ilck/veilog7/verilog7/verilog77.v" Line 18: s is not a constant
+ERROR:HDLCompiler:44 - "D:/ilck/veilog7/verilog7/verilog77.v" Line 22: s is not a constant
+ERROR:HDLCompiler:598 - "D:/ilck/veilog7/verilog7/verilog77.v" Line 2: Module <verilog77> ignored due to previous errors.
+Verilog file D:/ilck/veilog7/verilog7/verilog77.v ignored due to errors

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ilck/decoder2x4/final555.xst" -ofn "D:/ilck/decoder2x4/final555.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim final555.ngc final555_synthesis.v 

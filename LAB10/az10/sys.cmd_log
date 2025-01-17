@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ilck/az10/sys.xst" -ofn "D:/ilck/az10/sys.syr" 

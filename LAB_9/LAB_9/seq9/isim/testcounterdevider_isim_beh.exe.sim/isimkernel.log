@@ -1,0 +1,28 @@
+Command line:
+   testcounterdevider_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49308
+
+Tue Nov 26 12:09:44 2024
+
+
+ Elaboration Time: 0.514803 sec
+
+ Current Memory Usage: 680.538 Meg
+
+ Total Signals          : 15
+ Total Nets             : 15
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 123
+
+ Total Simulation Time: 0.514803 sec
+
+ Current Memory Usage: 680.538 Meg
+
+Tue Nov 26 12:10:07 2024
+

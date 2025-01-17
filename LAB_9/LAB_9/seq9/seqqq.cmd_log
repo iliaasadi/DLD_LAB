@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/ise/seq9/seqqq.xst" -ofn "/home/ise/seq9/seqqq.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim seqqq.ngc JKFF_synthesis.v 
+xst -intstyle ise -ifn "/home/ise/seq9/seqqq.xst" -ofn "/home/ise/seq9/seqqq.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim seqqq.ngc JKFF_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 seqqq.ngc seqqq.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o seqqq_map.ncd seqqq.ngd seqqq.pcf 
+par -w -intstyle ise -ol high -t 1 seqqq_map.ncd seqqq.ncd seqqq.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seqqq.twx seqqq.ncd -o seqqq.twr seqqq.pcf 
+xst -intstyle ise -ifn "/home/ise/seq9/seqqq.xst" -ofn "/home/ise/seq9/seqqq.syr" 

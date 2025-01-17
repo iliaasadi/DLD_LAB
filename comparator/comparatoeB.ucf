@@ -1,0 +1,12 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "A[2]" LOC = P182;
+NET "A[1]" LOC = P181;
+NET "A[0]" LOC = P180;
+NET "B[2]" LOC = P178;
+NET "B[1]" LOC = P176;
+NET "B[0]" LOC = P175;
+NET "A_equal_B" LOC = P45;
+NET "A_greater_B" LOC = P46;
+NET "A_less_B" LOC = P48;

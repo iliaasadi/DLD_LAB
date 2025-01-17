@@ -1,0 +1,5 @@
+verilog work "JKFF.v"
+verilog work "seqqq.v"
+verilog work "clkcounter.v"
+verilog work "BCDcounter.v"
+verilog work "main.v"

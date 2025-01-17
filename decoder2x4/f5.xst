@@ -1,0 +1,5 @@
+set -tmpdir "D:/ilck/decoder2x4/xst/projnav.tmp"
+set -xsthdpdir "D:/ilck/decoder2x4/xst"
+elaborate
+-ifn f5.prj
+-ifmt mixed

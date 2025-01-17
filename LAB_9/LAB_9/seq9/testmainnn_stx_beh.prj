@@ -1,0 +1,7 @@
+verilog isim_temp "JKFF.v"
+verilog isim_temp "seqqq.v"
+verilog isim_temp "clkcounter.v"
+verilog isim_temp "BCDcounter.v"
+verilog isim_temp "main.v"
+verilog isim_temp "testmainnn.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

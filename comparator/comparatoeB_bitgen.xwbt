@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ilck\comparator\comparatoeB.ncd
+OUTFILE=D:\ilck\comparator\comparatoeB.bit
+FAMILY=Spartan3
+PART=xc3s400-5pq208
+WORKINGDIR=D:\ilck\comparator
+LICENSE=WebPack
+USER_INFO=__0_0_0

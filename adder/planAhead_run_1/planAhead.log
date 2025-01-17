@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 05 16:12:33 2024
+# Process ID: 4152
+# Log file: D:/ummm/adder/planAhead_run_1/planAhead.log
+# Journal file: D:/ummm/adder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/ummm/adder/pa.fromNetlist.tcl
+# create_project -name adder -dir "D:/ummm/adder/planAhead_run_1" -part xc3s400pq208-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/ummm/adder/finalFulladder.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/ummm/adder} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "finalFulladder.ucf" [current_fileset -constrset]
+Adding file 'D:/ummm/adder/finalFulladder.ucf' to fileset 'constrs_1'
+# add_files [list {finalFulladder.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s400pq208-5
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design finalFulladder.ngc ...
+WARNING:NetListWriters:298 - No output is written to finalFulladder.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file finalFulladder.edif ...
+ngc2edif: Total memory usage is 93824 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/adder.data/cache/finalFulladder_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/adder.data/cache/finalFulladder_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/pq208/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s400/pq208/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/spartan3-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/spartan3-5.lib.
+Parsing UCF File [D:/ummm/adder/finalFulladder.ucf]
+Finished Parsing UCF File [D:/ummm/adder/finalFulladder.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 5760c7d1
+startgroup
+set_property package_pin P183 [get_ports {a[3]}]
+endgroup
+startgroup
+set_property package_pin P182 [get_ports {a[2]}]
+endgroup
+startgroup
+set_property package_pin P181 [get_ports {a[1]}]
+endgroup
+startgroup
+set_property package_pin P180 [get_ports {a[0]}]
+endgroup
+startgroup
+set_property package_pin P178 [get_ports {b[3]}]
+endgroup
+startgroup
+set_property package_pin P176 [get_ports {b[2]}]
+endgroup
+startgroup
+set_property package_pin P175 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property package_pin P172 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property package_pin P42 [get_ports {s[3]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {s[2]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {s[1]}]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports {s[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/ummm/adder\planAhead_pid4152.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Nov 05 16:17:48 2024...
+INFO: [Common 17-83] Releasing license: PlanAhead

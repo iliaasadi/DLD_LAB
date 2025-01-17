@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ilck\seq91\seq91\seq9\main.ncd
+OUTFILE=D:\ilck\seq91\seq91\seq9\main.bit
+FAMILY=Spartan3
+PART=xc3s400-5pq208
+WORKINGDIR=D:\ilck\seq91\seq91\seq9
+LICENSE=WebPack
+USER_INFO=__0_0_0

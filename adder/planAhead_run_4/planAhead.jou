@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 05 16:38:46 2024
+# Process ID: 2184
+# Log file: D:/ummm/adder/planAhead_run_4/planAhead.log
+# Journal file: D:/ummm/adder/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ummm/adder/pa.fromNetlist.tcl

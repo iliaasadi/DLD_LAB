@@ -1,0 +1,638 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "sevenSeg.v" in library work
+Compiling verilog file "frequencyBlink.v" in library work
+Module <sevenSeg> compiled
+Compiling verilog file "segDevider.v" in library work
+Module <frequencyBlink> compiled
+Compiling verilog file "D_B.v" in library work
+Module <segDevider> compiled
+Compiling verilog file "CLK_main.v" in library work
+Module <D_B> compiled
+Compiling verilog file "changeState.v" in library work
+Module <CLK_main> compiled
+Compiling verilog file "main.v" in library work
+Module <changeState> compiled
+Module <main> compiled
+No errors in compilation
+Analysis of file <"main.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <main> in library <work>.
+
+Analyzing hierarchy for module <CLK_main> in library <work>.
+
+Analyzing hierarchy for module <D_B> in library <work>.
+
+Analyzing hierarchy for module <changeState> in library <work> with parameters.
+	S0 = "0000"
+	S1 = "0001"
+	S10 = "1010"
+	S11 = "1011"
+	S12 = "1100"
+	S13 = "1101"
+	S14 = "1110"
+	S15 = "1111"
+	S2 = "0010"
+	S3 = "0011"
+	S4 = "0100"
+	S5 = "0101"
+	S6 = "0110"
+	S7 = "0111"
+	S8 = "1000"
+	S9 = "1001"
+
+Analyzing hierarchy for module <segDevider> in library <work>.
+
+Analyzing hierarchy for module <frequencyBlink> in library <work> with parameters.
+	CLOCK_FREQ = "00000000000000000010011100010000"
+	CLOCK_FREQ_FULL = "00000000000000000100111000100000"
+	TOGGLE_INTERVAL = "00000000000000000010011100010000"
+	TOGGLE_INTERVAL_FULL = "00000000000000000100111000100000"
+
+Analyzing hierarchy for module <sevenSeg> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <main>.
+Module <main> is correct for synthesis.
+ 
+Analyzing module <CLK_main> in library <work>.
+Module <CLK_main> is correct for synthesis.
+ 
+Analyzing module <D_B> in library <work>.
+Module <D_B> is correct for synthesis.
+ 
+Analyzing module <changeState> in library <work>.
+	S0 = 4'b0000
+	S1 = 4'b0001
+	S10 = 4'b1010
+	S11 = 4'b1011
+	S12 = 4'b1100
+	S13 = 4'b1101
+	S14 = 4'b1110
+	S15 = 4'b1111
+	S2 = 4'b0010
+	S3 = 4'b0011
+	S4 = 4'b0100
+	S5 = 4'b0101
+	S6 = 4'b0110
+	S7 = 4'b0111
+	S8 = 4'b1000
+	S9 = 4'b1001
+Module <changeState> is correct for synthesis.
+ 
+Analyzing module <frequencyBlink> in library <work>.
+	CLOCK_FREQ = 32'sb00000000000000000010011100010000
+	CLOCK_FREQ_FULL = 32'sb00000000000000000100111000100000
+	TOGGLE_INTERVAL = 32'sb00000000000000000010011100010000
+	TOGGLE_INTERVAL_FULL = 32'sb00000000000000000100111000100000
+Module <frequencyBlink> is correct for synthesis.
+ 
+Analyzing module <segDevider> in library <work>.
+Module <segDevider> is correct for synthesis.
+ 
+Analyzing module <sevenSeg> in library <work>.
+Module <sevenSeg> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CLK_main>.
+    Related source file is "CLK_main.v".
+    Found 1-bit register for signal <clk_out>.
+    Found 26-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <CLK_main> synthesized.
+
+
+Synthesizing Unit <D_B>.
+    Related source file is "D_B.v".
+    Found 1-bit register for signal <Deb_Sig>.
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <D_B> synthesized.
+
+
+Synthesizing Unit <frequencyBlink>.
+    Related source file is "frequencyBlink.v".
+    Found 1-bit register for signal <light_door_open>.
+    Found 1-bit register for signal <light_full_garage>.
+    Found 5-bit up counter for signal <blink_count_door>.
+    Found 2-bit up counter for signal <blink_count_garage>.
+    Found 32-bit up counter for signal <counter_door>.
+    Found 32-bit up counter for signal <counter_garage>.
+    Found 1-bit register for signal <door_active>.
+    Found 1-bit register for signal <garage_active>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <frequencyBlink> synthesized.
+
+
+Synthesizing Unit <sevenSeg>.
+    Related source file is "sevenSeg.v".
+    Found 8x8-bit ROM for signal <seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <sevenSeg> synthesized.
+
+
+Synthesizing Unit <changeState>.
+    Related source file is "changeState.v".
+    Register <state> equivalent to <parking_lights> has been removed
+    Found 4x52-bit ROM for signal <Ex$rom0000>.
+    Found 2-bit register for signal <nearest_park>.
+    Found 4-bit register for signal <parking_lights>.
+    Found 3-bit register for signal <capacity>.
+    Found 3-bit 16-to-1 multiplexer for signal <capacity$mux0000> created at line 50.
+    Found 1-bit register for signal <door_open_to_entry>.
+    Found 1-bit 16-to-1 multiplexer for signal <door_open_to_entry$mux0000> created at line 50.
+    Found 1-bit register for signal <door_open_to_exit>.
+    Found 1-bit 16-to-1 multiplexer for signal <door_open_to_exit$mux0000> created at line 50.
+    Found 1-bit register for signal <full_garage>.
+    Found 1-bit 16-to-1 multiplexer for signal <full_garage$mux0000> created at line 50.
+    Found 2-bit 16-to-1 multiplexer for signal <nearest_park$mux0000> created at line 50.
+    Found 4-bit 16-to-1 multiplexer for signal <parking_lights$mux0000> created at line 50.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   9 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <changeState> synthesized.
+
+
+Synthesizing Unit <segDevider>.
+    Related source file is "segDevider.v".
+    Found 8-bit register for signal <seg_data>.
+    Found 5-bit register for signal <seg_select>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <segDevider> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "main.v".
+Unit <main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 4x52-bit ROM                                          : 1
+ 8x8-bit ROM                                           : 2
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+ 5-bit up counter                                      : 1
+# Registers                                            : 21
+ 1-bit register                                        : 16
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 6
+ 1-bit 16-to-1 multiplexer                             : 3
+ 2-bit 16-to-1 multiplexer                             : 1
+ 3-bit 16-to-1 multiplexer                             : 1
+ 4-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 4x52-bit ROM                                          : 1
+ 8x8-bit ROM                                           : 2
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+ 5-bit up counter                                      : 1
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Multiplexers                                         : 6
+ 1-bit 16-to-1 multiplexer                             : 3
+ 2-bit 16-to-1 multiplexer                             : 1
+ 3-bit 16-to-1 multiplexer                             : 1
+ 4-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <seg_select_4> (without init value) has a constant value of 0 in block <segDevider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <seg_select_3> (without init value) has a constant value of 0 in block <segDevider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <seg_select_1> (without init value) has a constant value of 0 in block <segDevider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <seg_data_7> (without init value) has a constant value of 0 in block <segDevider>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <main> ...
+
+Optimizing unit <frequencyBlink> ...
+
+Optimizing unit <changeState> ...
+
+Optimizing unit <segDevider> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 5.
+FlipFlop changestate/parking_lights_1 has been replicated 1 time(s)
+FlipFlop db1/Deb_Sig has been replicated 1 time(s)
+FlipFlop db2/Deb_Sig has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 134
+ Flip-Flops                                            : 134
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 627
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 87
+#      LUT2                        : 102
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
+#      LUT3                        : 54
+#      LUT3_D                      : 3
+#      LUT3_L                      : 4
+#      LUT4                        : 101
+#      LUT4_L                      : 8
+#      MUXCY                       : 110
+#      MUXF5                       : 34
+#      MUXF6                       : 14
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 90
+# FlipFlops/Latches                : 134
+#      FDC                         : 56
+#      FDCE                        : 76
+#      FDP                         : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 5
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                      198  out of   3584     5%  
+ Number of Slice Flip Flops:            134  out of   7168     1%  
+ Number of 4 input LUTs:                371  out of   7168     5%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    141    17%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_in                             | BUFGP                  | 27    |
+clkmain/clk_out1                   | BUFG                   | 107   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+-----------------------------+-------+
+Control Signal                           | Buffer(FF name)             | Load  |
+-----------------------------------------+-----------------------------+-------+
+clkmain_not0000(clkmain_not00001_INV_0:O)| NONE(changestate/capacity_0)| 134   |
+-----------------------------------------+-----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.770ns (Maximum Frequency: 147.710MHz)
+   Minimum input arrival time before clock: 6.945ns
+   Maximum output required time after clock: 7.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 6.149ns (frequency: 162.633MHz)
+  Total number of paths / destination ports: 1054 / 28
+-------------------------------------------------------------------------
+Delay:               6.149ns (Levels of Logic = 27)
+  Source:            clkmain/counter_1 (FF)
+  Destination:       clkmain/counter_25 (FF)
+  Source Clock:      clk_in rising
+  Destination Clock: clk_in rising
+
+  Data Path: clkmain/counter_1 to clkmain/counter_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  clkmain/counter_1 (clkmain/counter_1)
+     LUT1:I0->O            1   0.479   0.000  clkmain/Mcount_counter_cy<1>_rt (clkmain/Mcount_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.435   0.000  clkmain/Mcount_counter_cy<1> (clkmain/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<2> (clkmain/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<3> (clkmain/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<4> (clkmain/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<5> (clkmain/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<6> (clkmain/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<7> (clkmain/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<8> (clkmain/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<9> (clkmain/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<10> (clkmain/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<11> (clkmain/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<12> (clkmain/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<13> (clkmain/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<14> (clkmain/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<15> (clkmain/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<16> (clkmain/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<17> (clkmain/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<18> (clkmain/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<19> (clkmain/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<20> (clkmain/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<21> (clkmain/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<22> (clkmain/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  clkmain/Mcount_counter_cy<23> (clkmain/Mcount_counter_cy<23>)
+     MUXCY:CI->O           0   0.056   0.000  clkmain/Mcount_counter_cy<24> (clkmain/Mcount_counter_cy<24>)
+     XORCY:CI->O           1   0.786   0.851  clkmain/Mcount_counter_xor<25> (Result<25>)
+     LUT2:I1->O            1   0.479   0.000  clkmain/Mcount_counter_eqn_251 (clkmain/Mcount_counter_eqn_25)
+     FDC:D                     0.176          clkmain/counter_25
+    ----------------------------------------
+    Total                      6.149ns (4.258ns logic, 1.891ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkmain/clk_out1'
+  Clock period: 6.770ns (frequency: 147.710MHz)
+  Total number of paths / destination ports: 4253 / 180
+-------------------------------------------------------------------------
+Delay:               6.770ns (Levels of Logic = 11)
+  Source:            changestate/freq/counter_garage_8 (FF)
+  Destination:       changestate/freq/garage_active (FF)
+  Source Clock:      clkmain/clk_out1 rising
+  Destination Clock: clkmain/clk_out1 rising
+
+  Data Path: changestate/freq/counter_garage_8 to changestate/freq/garage_active
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  changestate/freq/counter_garage_8 (changestate/freq/counter_garage_8)
+     LUT4:I0->O            1   0.479   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_lut<0> (changestate/freq/counter_garage_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<0> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<1> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<2> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<3> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<4> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<5> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  changestate/freq/counter_garage_cmp_eq0000_wg_cy<6> (changestate/freq/counter_garage_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          36   0.265   1.654  changestate/freq/counter_garage_cmp_eq0000_wg_cy<7> (changestate/freq/counter_garage_cmp_eq0000)
+     LUT3:I2->O            2   0.479   0.804  changestate/freq/blink_count_garage_or00001 (changestate/freq/blink_count_garage_or0000)
+     LUT3:I2->O            1   0.479   0.000  changestate/freq/garage_active_mux00001 (changestate/freq/garage_active_mux0000)
+     FDCE:D                    0.176          changestate/freq/garage_active
+    ----------------------------------------
+    Total                      6.770ns (3.272ns logic, 3.499ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkmain/clk_out1'
+  Total number of paths / destination ports: 129 / 13
+-------------------------------------------------------------------------
+Offset:              6.945ns (Levels of Logic = 7)
+  Source:            Ex<0> (PAD)
+  Destination:       changestate/parking_lights_1 (FF)
+  Destination Clock: clkmain/clk_out1 rising
+
+  Data Path: Ex<0> to changestate/parking_lights_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   0.715   1.880  Ex_0_IBUF (Ex_0_IBUF)
+     LUT2:I0->O            1   0.479   0.976  changestate/parking_lights_mux0007<2>_SW0 (N6)
+     LUT4:I0->O            1   0.479   0.851  changestate/parking_lights_mux0007<2> (changestate/parking_lights_mux0007<2>)
+     LUT3:I1->O            1   0.479   0.000  changestate/Mmux_parking_lights_mux0000_52 (changestate/Mmux_parking_lights_mux0000_52)
+     MUXF5:I1->O           1   0.314   0.000  changestate/Mmux_parking_lights_mux0000_4_f5_1 (changestate/Mmux_parking_lights_mux0000_4_f52)
+     MUXF6:I1->O           1   0.298   0.000  changestate/Mmux_parking_lights_mux0000_3_f6_1 (changestate/Mmux_parking_lights_mux0000_3_f62)
+     MUXF7:I1->O           2   0.298   0.000  changestate/Mmux_parking_lights_mux0000_2_f7_1 (changestate/parking_lights_mux0000<2>)
+     FDC:D                     0.176          changestate/parking_lights_1
+    ----------------------------------------
+    Total                      6.945ns (3.238ns logic, 3.707ns route)
+                                       (46.6% logic, 53.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkmain/clk_out1'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              7.271ns (Levels of Logic = 1)
+  Source:            changestate/parking_lights_0 (FF)
+  Destination:       parking_lights<0> (PAD)
+  Source Clock:      clkmain/clk_out1 rising
+
+  Data Path: changestate/parking_lights_0 to parking_lights<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             65   0.626   1.736  changestate/parking_lights_0 (changestate/parking_lights_0)
+     OBUF:I->O                 4.909          parking_lights_0_OBUF (parking_lights<0>)
+    ----------------------------------------
+    Total                      7.271ns (5.535ns logic, 1.736ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.15 secs
+ 
+--> 
+
+
+Total memory usage is 614448 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

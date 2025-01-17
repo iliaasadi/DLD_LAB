@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 05 16:17:26 2024
+# Process ID: 3228
+# Log file: D:/ummm/adder/planAhead_run_2/planAhead.log
+# Journal file: D:/ummm/adder/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ummm/adder/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P161 [get_ports cin]
+endgroup
+startgroup
+set_property package_pin P162 [get_ports sel]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports cout]
+endgroup
+save_constraints

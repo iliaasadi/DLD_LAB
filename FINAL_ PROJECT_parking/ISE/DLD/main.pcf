@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Jan 12 12:51:25 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_data<0>" LOCATE = SITE "P10" LEVEL 1;
+COMP "seg_data<1>" LOCATE = SITE "P7" LEVEL 1;
+COMP "seg_data<2>" LOCATE = SITE "P11" LEVEL 1;
+COMP "seg_data<3>" LOCATE = SITE "P5" LEVEL 1;
+COMP "seg_data<4>" LOCATE = SITE "P4" LEVEL 1;
+COMP "seg_data<5>" LOCATE = SITE "P12" LEVEL 1;
+COMP "seg_data<6>" LOCATE = SITE "P9" LEVEL 1;
+COMP "seg_data<7>" LOCATE = SITE "P3" LEVEL 1;
+COMP "RST" LOCATE = SITE "P183" LEVEL 1;
+COMP "Ex<0>" LOCATE = SITE "P169" LEVEL 1;
+COMP "Ex<1>" LOCATE = SITE "P171" LEVEL 1;
+COMP "car_out" LOCATE = SITE "P185" LEVEL 1;
+COMP "light_door_open" LOCATE = SITE "P50" LEVEL 1;
+COMP "car_in" LOCATE = SITE "P187" LEVEL 1;
+COMP "light_full_garage" LOCATE = SITE "P51" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "P184" LEVEL 1;
+COMP "parking_lights<0>" LOCATE = SITE "P64" LEVEL 1;
+COMP "parking_lights<1>" LOCATE = SITE "P63" LEVEL 1;
+COMP "parking_lights<2>" LOCATE = SITE "P62" LEVEL 1;
+COMP "parking_lights<3>" LOCATE = SITE "P61" LEVEL 1;
+COMP "seg_select<0>" LOCATE = SITE "P15" LEVEL 1;
+COMP "seg_select<1>" LOCATE = SITE "P20" LEVEL 1;
+COMP "seg_select<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "seg_select<3>" LOCATE = SITE "P19" LEVEL 1;
+COMP "seg_select<4>" LOCATE = SITE "P16" LEVEL 1;
+NET "clk_in_BUFGP/IBUFG" BEL "clk_in_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

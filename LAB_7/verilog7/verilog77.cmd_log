@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 verilog77.ngc verilog77.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o verilog77_map.ncd verilog77.ngd verilog77.pcf 
+par -w -intstyle ise -ol high -t 1 verilog77_map.ncd verilog77.ncd verilog77.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml verilog77.twx verilog77.ncd -o verilog77.twr verilog77.pcf 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 verilog77.ngc verilog77.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o verilog77_map.ncd verilog77.ngd verilog77.pcf 
+par -w -intstyle ise -ol high -t 1 verilog77_map.ncd verilog77.ncd verilog77.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml verilog77.twx verilog77.ncd -o verilog77.twr verilog77.pcf 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 verilog77.ngc verilog77.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o verilog77_map.ncd verilog77.ngd verilog77.pcf 
+par -w -intstyle ise -ol high -t 1 verilog77_map.ncd verilog77.ncd verilog77.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml verilog77.twx verilog77.ncd -o verilog77.twr verilog77.pcf 
+bitgen -intstyle ise -f verilog77.ut verilog77.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc verilog77.ucf -p xc3s400-pq208-5 verilog77.ngc verilog77.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o verilog77_map.ncd verilog77.ngd verilog77.pcf 
+par -w -intstyle ise -ol high -t 1 verilog77_map.ncd verilog77.ncd verilog77.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml verilog77.twx verilog77.ncd -o verilog77.twr verilog77.pcf -ucf verilog77.ucf 
+bitgen -intstyle ise -f verilog77.ut verilog77.ncd 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 
+xst -intstyle ise -ifn "D:/ilck/veilog7/verilog7/verilog77.xst" -ofn "D:/ilck/veilog7/verilog7/verilog77.syr" 

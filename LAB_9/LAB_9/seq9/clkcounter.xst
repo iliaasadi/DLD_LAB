@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/seq9/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/seq9/xst"
+elaborate
+-ifn clkcounter.prj
+-ifmt mixed

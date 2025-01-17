@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 finalFulladder.ngc finalFulladder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o finalFulladder_map.ncd finalFulladder.ngd finalFulladder.pcf 
+par -w -intstyle ise -ol high -t 1 finalFulladder_map.ncd finalFulladder.ncd finalFulladder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml finalFulladder.twx finalFulladder.ncd -o finalFulladder.twr finalFulladder.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim finalFulladder.ngc finalFulladder_synthesis.v 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim finalFulladder.ngc finalFulladder_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 finalFulladder.ngc finalFulladder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o finalFulladder_map.ncd finalFulladder.ngd finalFulladder.pcf 
+par -w -intstyle ise -ol high -t 1 finalFulladder_map.ncd finalFulladder.ncd finalFulladder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml finalFulladder.twx finalFulladder.ncd -o finalFulladder.twr finalFulladder.pcf 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 finalFulladder.ngc finalFulladder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o finalFulladder_map.ncd finalFulladder.ngd finalFulladder.pcf 
+par -w -intstyle ise -ol high -t 1 finalFulladder_map.ncd finalFulladder.ncd finalFulladder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml finalFulladder.twx finalFulladder.ncd -o finalFulladder.twr finalFulladder.pcf 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+xst -intstyle ise -ifn "D:/ummm/adder/finalFulladder.xst" -ofn "D:/ummm/adder/finalFulladder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 finalFulladder.ngc finalFulladder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o finalFulladder_map.ncd finalFulladder.ngd finalFulladder.pcf 
+par -w -intstyle ise -ol high -t 1 finalFulladder_map.ncd finalFulladder.ncd finalFulladder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml finalFulladder.twx finalFulladder.ncd -o finalFulladder.twr finalFulladder.pcf 
+bitgen -intstyle ise -f finalFulladder.ut finalFulladder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalFulladder.ucf -p xc3s400-pq208-5 finalFulladder.ngc finalFulladder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o finalFulladder_map.ncd finalFulladder.ngd finalFulladder.pcf 
+par -w -intstyle ise -ol high -t 1 finalFulladder_map.ncd finalFulladder.ncd finalFulladder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml finalFulladder.twx finalFulladder.ncd -o finalFulladder.twr finalFulladder.pcf -ucf finalFulladder.ucf 
+bitgen -intstyle ise -f finalFulladder.ut finalFulladder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalFulladder.ucf -p xc3s400-pq208-5 finalFulladder.ngc finalFulladder.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o finalFulladder_map.ncd finalFulladder.ngd finalFulladder.pcf 
+par -w -intstyle ise -ol high -t 1 finalFulladder_map.ncd finalFulladder.ncd finalFulladder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml finalFulladder.twx finalFulladder.ncd -o finalFulladder.twr finalFulladder.pcf -ucf finalFulladder.ucf 
+bitgen -intstyle ise -f finalFulladder.ut finalFulladder.ncd 

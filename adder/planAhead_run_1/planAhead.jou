@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 05 16:12:33 2024
+# Process ID: 4152
+# Log file: D:/ummm/adder/planAhead_run_1/planAhead.log
+# Journal file: D:/ummm/adder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ummm/adder/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P183 [get_ports {a[3]}]
+endgroup
+startgroup
+set_property package_pin P182 [get_ports {a[2]}]
+endgroup
+startgroup
+set_property package_pin P181 [get_ports {a[1]}]
+endgroup
+startgroup
+set_property package_pin P180 [get_ports {a[0]}]
+endgroup
+startgroup
+set_property package_pin P178 [get_ports {b[3]}]
+endgroup
+startgroup
+set_property package_pin P176 [get_ports {b[2]}]
+endgroup
+startgroup
+set_property package_pin P175 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property package_pin P172 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property package_pin P42 [get_ports {s[3]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {s[2]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {s[1]}]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports {s[0]}]
+endgroup
+save_constraints
