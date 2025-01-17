@@ -1,2 +1,6 @@
-DLD Course Lab Code (Verilog)
-Welcome to the repository for the Digital Logic Design (DLD) course labs, implemented using Verilog. This collection contains the code and resources for various lab assignments completed during the course.
+
+
+# Digital Logic Design (DLD) Course Lab Final Project
+
+This repository contains the final project for the Digital Logic Design (DLD) course lab. The project involves designing and implementing digital circuits using Verilog. The primary objective is to demonstrate a comprehensive understanding of digital logic concepts and their practical applications through the creation of efficient and reliable digital systems.
+
